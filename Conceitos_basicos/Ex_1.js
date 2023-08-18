@@ -4,15 +4,15 @@ const prompt = require ("prompt-sync")();
 function repetir (){
 
 
-    const num = prompt("Digite um numero: ")
+    const num = parseFloat(prompt("Digite um numero: "));
+    let armazenar = num;
 
 
-    for (i=num; i>=1; i=i-1){
-        console.log(num*num)
+    for (i=num-1; i>=1; i=i-1){
+        armazenar=armazenar*i;
+         
     }
-
-
-
+    console.log (armazenar)
 
 }
 repetir();
